@@ -1,0 +1,68 @@
+import CustomButton from "@/components/CustomButton";
+import { Link, router } from "expo-router";
+import {
+  Image,
+  ImageBackground,
+  SafeAreaView,
+  StyleSheet,
+  View,
+} from "react-native";
+
+const backgroundGif = require("@/assets/images/login-background.gif");
+
+export default function AuthScreen() {
+  return (
+    <ImageBackground
+      source={backgroundGif}
+      resizeMode="cover"
+      style={styles.background}
+    >
+      <SafeAreaView style={styles.container}>
+        <View style={styles.imageContainer}>
+          <Image
+            source={require("@/assets/images/logo.png")}
+            style={styles.logo}
+          />
+        </View>
+        <View style={styles.buttonContainer}>
+          <CustomButton
+            label="이메일 로그인"
+            onPress={() => router.push("/auth/login")}
+          />
+          <Link href={"/auth/signup"} style={styles.signupText}>
+            이메일로 가입하기
+          </Link>
+        </View>
+      </SafeAreaView>
+    </ImageBackground>
+  );
+}
+
+const styles = StyleSheet.create({
+  background: {
+    flex: 1,
+  },
+  container: {
+    flex: 1,
+  },
+  imageContainer: {
+    justifyContent: "center",
+    alignItems: "center",
+    flex: 2,
+  },
+  buttonContainer: {
+    paddingHorizontal: 32,
+    flex: 1,
+  },
+  logo: {
+    width: 112,
+    height: 112,
+    borderRadius: 56,
+  },
+  signupText: {
+    textAlign: "center",
+    textDecorationLine: "underline",
+    marginTop: 20,
+    color: "#FFFFFF",
+  },
+});
