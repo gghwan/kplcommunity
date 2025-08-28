@@ -25,26 +25,18 @@ In the output, you'll find options to open the app in a
 
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
+## 앱 주요 기능
 
-When you're ready, run:
+이 애플리케이션은 다음과 같은 핵심 기능을 제공합니다:
 
-```bash
-npm run reset-project
-```
+- **인증**: 사용자 회원가입 및 로그인 기능.
+- **게시물 관리**: 게시물 생성, 조회, 수정, 삭제 및 검색 기능.
+- **댓글 기능**: 게시물에 댓글을 추가하고 삭제하는 기능.
+- **투표 기능**: 게시물 내 투표에 참여하는 기능.
+- **게시물 좋아요**: 게시물에 좋아요를 누르거나 취소하는 기능.
+- **사용자 프로필**: 사용자 프로필 조회 및 업데이트 (아바타 관리 포함) 기능.
+- **피드**: 개인화된 피드 및 전체 게시물 피드 조회 기능.
+- **이미지 처리**: 게시물 및 프로필에 이미지를 업로드하고 표시하는 기능.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
